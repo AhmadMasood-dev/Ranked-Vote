@@ -15,11 +15,11 @@ const Header = () => {
       <div className="flex items-center justify-between py-4 md:px-10 px-7 md:flex">
         <Logo />
 
-        <ul className="md:flex md:items-center">
+        <ul className="pb-12 md:flex md:items-center md:pb-0">
           {Links.map((link, index) => (
             <li
               key={link.name}
-              className={`text-xs md:ml-8 md:my-0 my-7 ${
+              className={`text-sm md:ml-8 md:my-0 my-7 ${
                 index === 0 ? "border-r-2 border-gray-400 pr-4" : ""
               }`}
             >
@@ -32,7 +32,7 @@ const Header = () => {
             </li>
           ))}
 
-          <Button />
+          <Button>Sign Up</Button>
         </ul>
       </div>
     </div>
