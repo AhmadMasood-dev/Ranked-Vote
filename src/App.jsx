@@ -4,7 +4,9 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <div className=" w-full h-screen"></div>
     </div>
+    
   );
 }
 

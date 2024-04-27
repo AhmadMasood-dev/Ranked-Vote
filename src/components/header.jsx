@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "./../data/index.js";
 import Button from "./button.js";
+
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const Header = () => {
   let Links = [
     { name: "Solutions", link: "/" },
@@ -10,17 +15,28 @@ const Header = () => {
     { name: "Pricing", link: "/" },
     { name: "Log in", link: "/" },
   ];
+  let [open, setOpen] = useState(false);
   return (
     <div className="fixed top-0 left-0 w-full shadow-md">
-      <div className="flex items-center justify-between py-4 md:px-10 px-7 md:flex">
+      <div className=" items-center justify-between   py-4 md:px-10 px-7 md:flex">
         <Logo />
-
-        <ul className="pb-12 md:flex md:items-center md:pb-0">
+        <div
+          onClick={() => setOpen(!open)}
+          className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
+        >
+          <FontAwesomeIcon icon={open ? faXmark : faBars} />
+          {/* <FontAwesomeIcon icon={ } /> */}
+        </div>
+        <ul
+          className={`pb-12 md:flex md:items-center md:pb-0 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 translate-all duration-500 ease-in ${
+            open ? "top-20  " : "top-[-490px]"
+          }`}
+        >
           {Links.map((link, index) => (
             <li
               key={link.name}
               className={`text-sm md:ml-8 md:my-0 my-7 ${
-                index === 0 ? "border-r-2 border-gray-400 pr-4" : ""
+                index === 0 ? "border-r-2 border-gray-400 pr-4 sm:hidden" : ""
               }`}
             >
               <a
