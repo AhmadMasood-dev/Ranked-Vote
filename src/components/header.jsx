@@ -17,15 +17,14 @@ const Header = () => {
   ];
   let [open, setOpen] = useState(false);
   return (
-    <div className="fixed top-0 left-0 w-full shadow-md">
-      <div className=" items-center justify-between   py-4 md:px-10 px-7 md:flex">
+    <div className="fixed top-0 left-0 w-full bg-white shadow-md">
+      <div className="items-center justify-between py-4 md:px-10 px-7 md:flex">
         <Logo />
         <div
           onClick={() => setOpen(!open)}
-          className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
+          className="absolute text-3xl cursor-pointer right-8 top-5 md:hidden"
         >
           <FontAwesomeIcon icon={open ? faXmark : faBars} />
-          {/* <FontAwesomeIcon icon={ } /> */}
         </div>
         <ul
           className={`pb-12 md:flex md:items-center md:pb-0 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 translate-all duration-500 ease-in ${
