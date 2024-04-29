@@ -35,7 +35,7 @@ const Header = () => {
             <li
               key={link.name}
               className={`text-sm md:ml-8 md:my-0 my-7 ${
-                index === 0 ? "border-r-2 border-gray-400 pr-4 sm:hidden" : ""
+                index === 0 ? "border-r-2 border-gray-400 pr-4 " : ""
               }`}
             >
               <a
