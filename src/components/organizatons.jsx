@@ -2,62 +2,56 @@ import React from "react";
 
 const Organizatons = () => {
   return (
-    <div>
-      <div class="mt-12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6">
-        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+    <main className="my-10">
+      <div className="text-xl text-center text-gray-400 text-bold">
+        <p>TRUSTED BY TOP ORGANIZATIONS </p>
+      </div>
+
+      <div className="grid self-center grid-cols-3 mx-auto mt-12 place-items-center sm:grid-cols-4 md:grid-cols-5 ">
+        <div className="p-4 transition duration-200 grayscale hover:grayscale-0">
           <img
-            src="/public/images/clients/microsoft.svg"
-            class="h-12 w-auto mx-auto"
+            src="https://assets-global.website-files.com/5d9a902248623ef932d0da66/65327213500e83c79137c8f3_Adobe_Corporate_logo.svg-p-500.png"
+            className="w-auto h-12 mx-auto"
             loading="lazy"
             alt="client logo"
             width=""
             height=""
           />
         </div>
-        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+        <div className="p-4 transition duration-200 grayscale hover:grayscale-0">
           <img
-            src="/public/images/clients/airbnb.svg"
-            class="h-12 w-auto mx-auto"
+            src="https://assets-global.website-files.com/5d9a902248623ef932d0da66/62839f54abd622565aaa9a60_Studio_Wildcard_logo.png"
+            className="w-auto h-12 mx-auto"
             loading="lazy"
             alt="client logo"
             width=""
             height=""
           />
         </div>
-        <div class="p-4 flex grayscale transition duration-200 hover:grayscale-0">
+        <div className="flex p-4 transition duration-200 grayscale hover:grayscale-0">
           <img
-            src="/public/images/clients/google.svg"
-            class="h-9 w-auto m-auto"
+            src="https://assets-global.website-files.com/5d9a902248623ef932d0da66/653272ef82fc6cc93feecdca_target-logo.png"
+            className="w-auto m-auto h-9"
             loading="lazy"
             alt="client logo"
             width=""
             height=""
           />
         </div>
-        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+        <div className="p-4 transition duration-200 grayscale hover:grayscale-0">
           <img
-            src="/public/images/clients/ge.svg"
-            class="h-12 w-auto mx-auto"
+            src="https://assets-global.website-files.com/5d9a902248623ef932d0da66/653273d916c87698a51c53fb_Grafana_logo.svg.png"
+            className="w-auto h-12 mx-auto"
             loading="lazy"
             alt="client logo"
             width=""
             height=""
           />
         </div>
-        <div class="p-4 flex grayscale transition duration-200 hover:grayscale-0">
+        <div className="p-4 transition duration-200 grayscale hover:grayscale-0">
           <img
-            src="/public/images/clients/netflix.svg"
-            class="h-8 w-auto m-auto"
-            loading="lazy"
-            alt="client logo"
-            width=""
-            height=""
-          />
-        </div>
-        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-          <img
-            src="./../../public/images/clients/google-cloud.svg"
-            class="h-12 w-auto mx-auto"
+            src="https://assets-global.website-files.com/5d9a902248623ef932d0da66/6532743e7d7e6d9f4fcf0248_Spotify_Logo_CMYK_Green-p-500.png"
+            className="w-auto h-12 mx-auto"
             loading="lazy"
             alt="client logo"
             width=""
@@ -65,7 +59,7 @@ const Organizatons = () => {
           />
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

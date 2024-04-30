@@ -2,8 +2,8 @@ import React from "react";
 const Hero = () => {
   return (
     <section className="text-gray-400 bg-blue-violet body-font ">
-      <div className="container flex flex-col items-center px-5 py-24 mx-auto jus md:flex-row md:bg-hero-pattern bg-none  bg-auto md:bg-contain bg-no-repeat bg-right">
-        <div className="flex flex-col items-center mb-16 md:pr-3 px-10 text-center lg:flex-grow md:w-1/2 pr-none lg:pr-4  md:items-start md:text-left md:mb-0">
+      <div className="container flex flex-col items-center px-5 py-24 mx-auto bg-right bg-no-repeat bg-auto jus md:flex-row md:bg-hero-pattern bg-none md:bg-contain">
+        <div className="flex flex-col items-center px-10 mb-16 text-center md:pr-3 lg:flex-grow md:w-1/2 pr-none lg:pr-4 md:items-start md:text-left md:mb-0">
           <p className="pl-1 text-sm font-medium text-zinc-200 title-font sm:text-xs">
             ONLINE RANKED CHOICE VOTING APP
           </p>
