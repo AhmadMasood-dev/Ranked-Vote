@@ -17,7 +17,7 @@ const Header = () => {
   ];
   let [open, setOpen] = useState(false);
   return (
-    <div className="fixed top-0 left-0 w-full bg-white shadow-md">
+    <div className="fixed top-0 left-0 w-full bg-white shadow-md lg:static">
       <div className="items-center justify-between py-4 md:px-10 px-7 md:flex">
         <Logo />
         <div
