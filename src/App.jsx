@@ -1,8 +1,10 @@
 import "./App.css";
-import FeatureSection from "./components/Feature_section.jsx";
+import FeatureSection from "./components/featureSection.jsx";
 import Header from "./components/header.jsx";
 import Hero from "./components/hero.jsx";
 import Organizatons from "./components/organizatons.jsx";
+import Part from './components/organizatonsPart2.jsx'
+import PictureData from './components/pictureData.jsx'
 function App() {
   return (
     <>
@@ -10,7 +12,9 @@ function App() {
         <Header />
         <Hero />
         <Organizatons/>
+        <Part/>
         <FeatureSection/>
+        <PictureData/>
       </div>
     </>
   );
