@@ -5,6 +5,7 @@ import Hero from "./components/hero.jsx";
 import Organizatons from "./components/organizatons.jsx";
 import Part from './components/organizatonsPart2.jsx'
 import PictureData from './components/pictureData.jsx'
+import VotersRank from './components/votersRank.jsx'
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
         <Part/>
         <FeatureSection/>
         <PictureData/>
+        <VotersRank/>
       </div>
     </>
   );

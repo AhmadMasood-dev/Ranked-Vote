@@ -10,8 +10,8 @@ const PictureData = () => {
           alt=""
         />
       </div>
-      <div class="bg-dark-purple mb-10  md:pt-10 m-auto text-center items-center ">
-        <div className="flex m-auto font-extrabold text-white md:p-20 justify-evenly">
+      <div class="bg-dark-purple mb-10  md:pt-10 m-auto text-center items-center  ">
+        <div className="flex m-auto font-extrabold text-white md:flex md:p-20 md:justify-evenly felx-col ">
           <div className="">
             <h3 className="text-5xl text-center ">51,471</h3>
             <div className="text-center">
