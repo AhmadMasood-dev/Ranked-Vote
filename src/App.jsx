@@ -6,6 +6,9 @@ import Organizatons from "./components/organizatons.jsx";
 import Part from './components/organizatonsPart2.jsx'
 import PictureData from './components/pictureData.jsx'
 import VotersRank from './components/votersRank.jsx'
+import Cta from "./components/cta.jsx";
+// import Slider from './components/slider.jsx'
+import Statistic from "./components/statistic.jsx";
 function App() {
   return (
     <>
@@ -17,6 +20,8 @@ function App() {
         <FeatureSection/>
         <PictureData/>
         <VotersRank/>
+       <Statistic/>
+       <Cta/>
       </div>
     </>
   );

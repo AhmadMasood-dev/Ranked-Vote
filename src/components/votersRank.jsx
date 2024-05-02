@@ -32,7 +32,7 @@ const VotersRank = () => {
                 </p>
               </div>
             </div>
-            <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+            <div class="p-4 md:w-1/3 flex flex-col text-center items-center hover:shadow-2xl ease-out duration-700  transition hover:-translate-y-7">
               <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-medium-sea-green text-white  text-3xl mb-5 flex-shrink-0">
                 2
               </div>
@@ -50,7 +50,7 @@ const VotersRank = () => {
                 </p>
               </div>
             </div>
-            <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+            <div class="p-4 md:w-1/3 flex flex-col text-center items-center hover:shadow-2xl ease-out duration-700  transition hover:-translate-y-7">
               <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-cornflower-blue text-white  text-3xl mb-5 flex-shrink-0">
                 3
               </div>
