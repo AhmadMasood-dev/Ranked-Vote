@@ -22,6 +22,7 @@ module.exports = {
         "ghost-white": "#f5f7fd",
         "blue-violet-2": "#5d3eff",
         "orange": "#ffab00",
+        "orangenow": "#ff9500",
         "orangeme": "#ffb627",
         "tomato": "#ff5630",
         "lavender": "#e3d9fc",
@@ -36,6 +37,7 @@ module.exports = {
         "light-orange": "#fffaf1",
         "dark-purple": "#6023e9",
         "medium-slate-blue": "#5762ff",
+       'midnight-blue': '#0a1f44',
       },
       borderRadius: {
         '4xl': '2rem',

@@ -16,7 +16,7 @@ const Hero = () => {
             greater accuracy and fidelity than traditional voting method.
           </p>
           <div className="flex justify-center">
-            <button class="inline-flex text-white bg-orange border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded-full text-lg">
+            <button class="inline-flex text-white bg-orange border-0 py-2 px-6 focus:outline-none hover:bg-orangenow rounded-full text-lg transition-all duration-700 ease-out">
               Get Started
             </button>
           </div>
