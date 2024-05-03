@@ -68,9 +68,7 @@ const Testimonials = () => {
               <h6 className="text-xl font-medium text-lavender">
                 {slides[currentSlide].name}
               </h6>
-              <p className=" text-lavender">
-                {slides[currentSlide].location}
-              </p>
+              <p className=" text-lavender">{slides[currentSlide].location}</p>
             </div>
           </address>
         </div>
