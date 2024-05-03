@@ -1,6 +1,6 @@
 import React from "react";
 
-const PictureData = () => {
+const Voters = () => {
   return (
     <div>
       <div class="bg-indigo-200 h-148 flex justify-center ">
@@ -12,21 +12,21 @@ const PictureData = () => {
       </div>
       <div class="bg-dark-purple mb-10  md:pt-10 m-auto text-center items-center  ">
         <div className="flex m-auto font-extrabold text-white md:flex md:p-20 md:justify-evenly felx-col ">
-          <div className="">
+          <div >
             <h3 className="text-5xl text-center ">51,471</h3>
             <div className="text-center">
               <p>Elections created</p>
             </div>
             <br />
           </div>
-          <div className="">
+          <div >
             <h3 className="text-5xl text-center ">1,260,285</h3>
             <div className="text-center">
               <p>Voters</p>
             </div>
             <br />
           </div>
-          <div className="">
+          <div >
             <h3 className="text-5xl text-center ">270,615</h3>
             <div className="text-center">
               <p>Candidates ranked</p>
@@ -39,4 +39,4 @@ const PictureData = () => {
   );
 };
 
-export default PictureData;
+export default Voters;

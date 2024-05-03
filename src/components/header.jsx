@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../assets/index.js";
+import Logo from "../assets/logo.js";
 import Button from "./button.js";
 
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <div className="fixed top-0 left-0 w-full bg-white shadow-md lg:static">
       <div className="items-center justify-between py-4 md:px-10 px-7 md:flex">
-        <Logo className="bg-white" />
+        <Logo />
         <div
           onClick={() => setOpen(!open)}
           className="absolute text-3xl cursor-pointer right-8 top-5 md:hidden"
