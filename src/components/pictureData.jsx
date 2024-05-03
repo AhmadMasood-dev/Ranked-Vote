@@ -3,7 +3,7 @@ import React from "react";
 const PictureData = () => {
   return (
     <div>
-      <div class="bg-indigo-300 h-148 flex justify-center ">
+      <div class="bg-indigo-200 h-148 flex justify-center ">
         <img
           class="object-cover w-3/4 "
           src="https://assets-global.website-files.com/5d9a902248623ef932d0da66/6229072b20cf583c1ab3bdb6_Embed-Grid-Vote-Green%20(2).svg"

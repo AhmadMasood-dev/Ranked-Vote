@@ -1,90 +1,121 @@
-import React from "react";
-import { Carousel, initTWE } from "tw-elements";
+import React, { useState } from "react";
 
-// Initialize TWE for ES Users
-initTWE({ Carousel });
+const Testimonials = () => {
+  const slides = [
+    {
+      id: 1,
+      header:
+        "By allowing users to test out NYC's grid-style ballot before heading to the polls, RankedVote offers voters a dynamic and engaging education in the Do's and Don'ts of RCV.",
+      text: "The City of New York is a proud partner of RankedVote.”",
+      name: "LAURA WOOD",
+      location: "NEW YORK CITY'S CHIEF DEMOCRACY OFFICER",
+      image:
+        "https://assets-global.website-files.com/5d9a902248623ef932d0da66/62222ca5623baf29aa8adbf7_laura_wood_dnyc.jpeg",
+    },
+    {
+      id: 2,
+      header:
+        "If your organization has any interest in RCV education, be sure to include RankedVote in your toolkit.",
+      // text: "Quisquam itaque deserunt ullam, quia ea repellendus provident, ducimus neque ipsam modi voluptatibus doloremque, corrupti laborum. Incidunt numquam perferendis veritatis neque repellendus.",
+      name: "AHMED BUTT",
+      location: "CIVIC ENGAGEMENT COORDINATOR, ASIAN AMERICAN FEDERATION",
+      image:
+        "https://assets-global.website-files.com/5d9a902248623ef932d0da66/62222e983b4baea7130bd141_ahmed-aaf.jpeg",
+    },
+    {
+      id: 3,
+      header:
+        "Our community contest received tens of thousands of votes in a matter of days. No problems. We had were promptly answered.",
+      text: 'RankedVote handled the scale easily and with all the pro/premium features, there really is no other competitor."',
+      name: "JAT KARUNAKARAN",
+      location: "SENIOR PRODUCT MANAGER, STUDIO WILDCARD",
+      image:
+        "https://assets-global.website-files.com/5d9a902248623ef932d0da66/62331c47bb94d63273c2cd56_jat-studiowildcard.jpeg",
+    },
+  ];
 
-const CarouselComponent = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const prevSlide = () => {
+    setCurrentSlide(
+      (prevSlide) => (prevSlide - 1 + slides.length) % slides.length
+    );
+  };
+
+  const nextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+  };
+
   return (
-    <div
-      id="carouselExampleCaptions"
-      className="relative"
-      data-twe-carousel-init
-      data-twe-ride="carousel"
-    >
-      {/* Carousel indicators */}
-      <div className="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0" data-twe-carousel-indicators>
-        <button
-          type="button"
-          data-twe-target="#carouselExampleCaptions"
-          data-twe-slide-to="0"
-          data-twe-carousel-active
-          className="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        {/* Add more buttons for additional slides */}
+    <div className="relative m-20 mx-auto h-100 slider bg-blue-violet">
+      <div className="inset-0 py-20 slide">
+        <div className="w-full h-full max-w-2xl p-8 mx-auto ">
+          <h7 className="text-2xl font-bold text-white ">
+            {slides[currentSlide].header}
+          </h7>
+          <blockquote className="mt-10 text-2xl font-medium text-white ">
+            {slides[currentSlide].text}
+          </blockquote>
+          <address className="flex flex-col items-center mt-8 space-x-4">
+            <div>
+              <img
+                src={slides[currentSlide].image}
+                alt=""
+                className="w-20 h-20 border-2 border-white border-solid rounded-full shadow-lg "
+              />
+            </div>
+            <div className="text-center">
+              <h6 className="text-xl font-medium text-lavender">
+                {slides[currentSlide].name}
+              </h6>
+              <p className=" text-lavender">
+                {slides[currentSlide].location}
+              </p>
+            </div>
+          </address>
+        </div>
       </div>
 
-      {/* Carousel items */}
-      <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-        {/* First item */}
-        <div
-          className="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-          data-twe-carousel-active
-          data-twe-carousel-item
-          style={{ backfaceVisibility: "hidden" }}
-        >
-          <img
-            src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(15).jpg"
-            className="block w-full"
-            alt="..."
-          />
-          <div className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-            <h5 className="text-xl">First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
-        </div>
-        <div
-          className="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-          data-twe-carousel-active
-          data-twe-carousel-item
-          style={{ backfaceVisibility: "hidden" }}
-        >
-          <img
-            src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(15).jpg"
-            className="block w-full"
-            alt="..."
-          />
-          <div className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-            <h5 className="text-xl">First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
-        </div>
-        {/* Add more carousel items as needed */}
-      </div>
-
-      {/* Carousel controls - prev item */}
       <button
-        className="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-        type="button"
-        data-twe-target="#carouselExampleCaptions"
-        data-twe-slide="prev"
+        className="absolute z-10 p-2 transition transform -translate-y-1/2 rounded-full slider__btn slider__btn--left top-1/2 left-20"
+        onClick={prevSlide}
       >
-        {/* Add SVG for previous icon */}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          className="w-8 h-8 text-lavender"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
       </button>
-
-      {/* Carousel controls - next item */}
       <button
-        className="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-        type="button"
-        data-twe-target="#carouselExampleCaptions"
-        data-twe-slide="next"
+        className="absolute z-10 p-2 transform -translate-y-1/2 rounded-full slider__btn slider__btn--right top-1/2 right-20"
+        onClick={nextSlide}
       >
-        {/* Add SVG for next icon */}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          className="w-8 h-8 text-lavender"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
       </button>
     </div>
   );
 };
 
-export default CarouselComponent;
+export default Testimonials;

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function Statistic(props) {
   return (
     <div>
-      <section class="text-gray-600 body-font">
+      <section class="text-gray-600 body-font mt-20">
         <div class="flex flex-wrap w-full mb-10 md:mb-2 flex-col items-center text-center ">
           <p class="lg:w-1/2 w-full leading-relaxed text-gray-400 text-bold">
             WHY RANKED CHOICE VOTING WORKS

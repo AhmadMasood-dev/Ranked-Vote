@@ -9,7 +9,6 @@ const Hero = () => {
           </p>
           <h1 className="mb-4 text-4xl font-bold text-white title-font sm:text-5xl">
             The ranked choice platform for taking polls
-            {/* <br className="hidden lg:inline-block"/>readymade gluten */}
           </h1>
           <p className="mb-8 leading-relaxed text-white md:pr-10">
             Uncover your group's preferences. Get instant results. All with
