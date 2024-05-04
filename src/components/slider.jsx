@@ -16,7 +16,7 @@ const Testimonials = () => {
       id: 2,
       header:
         "If your organization has any interest in RCV education, be sure to include RankedVote in your toolkit.",
-      // text: "Quisquam itaque deserunt ullam, quia ea repellendus provident, ducimus neque ipsam modi voluptatibus doloremque, corrupti laborum. Incidunt numquam perferendis veritatis neque repellendus.",
+
       name: "AHMED BUTT",
       location: "CIVIC ENGAGEMENT COORDINATOR, ASIAN AMERICAN FEDERATION",
       image:
