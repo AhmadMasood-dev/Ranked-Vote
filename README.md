@@ -1,70 +1,43 @@
 # Overview
 
-This project was created with [Create React App](https://github.com/facebook/create-react-app).
+This project using HTML, CSS, Javascript and for responsiveness I use tailwind css in the react js.
 
-## Available Scripts
+# navbar
 
-In the project directory, you can run:
+I made a responsive navbar for the user and it fix according to all screens.The navbar and some links about the website and login/sign up button.
 
-### `npm start`
+# hero-section
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The hero section is the main introductory area of the website, often featuring a large hero image or video.
+It includes a compelling headline, a brief description of the website's purpose, and a call-to-action button.
+The hero section is designed to grab the user's attention and encourage them to explore the website further.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# TOP ORGANIZATIONS
 
-### `npm test`
+This section highlights the businesses, organizations, or partners that support or are associated with the website.
+It may include logos, names, and brief descriptions of these supporting companies.
+This section helps to build credibility and trust with the website's audience.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Voter Statistics
 
-### `npm run build`
+This section presents data and statistics related to the number of voters in the city or region the website serves.
+It could include charts, graphs, or infographics to visually represent the voter information.
+Providing this data helps to establish the website's relevance and importance to the local community.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Key Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+his section outlines the main features and functionalities of the website.
+It may include things like the categories of content or services offered, the interactive slider, and the responsive design.
+Highlighting the key features helps to showcase the website's capabilities and value to the user.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Slider
 
-### `npm run eject`
+the slider feature allows users to view and interact with reviews, testimonials, or other content in a dynamic, scrollable format.
+It provides an engaging way for users to consume and engage with the website's user-generated content.
+The slider is designed to be responsive and mobile-friendly.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Footer
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The footer typically includes important information such as contact details, social media links, and navigation menus.
+It serves as a consistent and accessible way for users to find and interact with the website's key information.
+The footer is also designed to be responsive and visually cohesive with the rest of the website.
