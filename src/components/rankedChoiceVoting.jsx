@@ -30,22 +30,33 @@ function Statistic(props) {
                 KEY ADVANTAGES OF RANKED CHOICE VOTING
               </p>
               <div className="md:px-2">
-              <div className="flex flex-row items-center ">
-              <FontAwesomeIcon icon={faCheck} className="text-medium-sea-green"/>  <p className="ml-2 md:ml-4">Determines the choices with the strongest support</p>
-              </div>
-              <div className="flex flex-row items-center">
-                
-              <FontAwesomeIcon icon={faCheck} className="text-medium-sea-green"/>  <p className="ml-2 md:ml-4">Eliminates the need for multiple decision rounds</p>
-              </div>
-              <div className="flex flex-row items-center">
-                
-              <FontAwesomeIcon icon={faCheck} className="text-medium-sea-green"/>  <p className="ml-2 md:ml-4">Reduces vote gaming</p>
-              </div>
-              
+                <div className="flex flex-row items-center ">
+                  <FontAwesomeIcon
+                    icon={faCheck}
+                    className="text-medium-sea-green"
+                  />{" "}
+                  <p className="ml-2 md:ml-4">
+                    Determines the choices with the strongest support
+                  </p>
+                </div>
+                <div className="flex flex-row items-center">
+                  <FontAwesomeIcon
+                    icon={faCheck}
+                    className="text-medium-sea-green"
+                  />{" "}
+                  <p className="ml-2 md:ml-4">
+                    Eliminates the need for multiple decision rounds
+                  </p>
+                </div>
+                <div className="flex flex-row items-center">
+                  <FontAwesomeIcon
+                    icon={faCheck}
+                    className="text-medium-sea-green"
+                  />{" "}
+                  <p className="ml-2 md:ml-4">Reduces vote gaming</p>
+                </div>
               </div>
             </div>
-
-            
           </div>
           <div class="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
             <img
